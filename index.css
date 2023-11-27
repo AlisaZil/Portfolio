@@ -32,6 +32,7 @@ html{
     background-color: #EEDFC2;
     overflow-x: hidden;
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 .dim-background{
@@ -113,6 +114,7 @@ html{
 .main-section .name-sction{
     width: 100%;
     height: 60%;
+    position: relative;
 
     animation: slide-2 1s ease forwards;
     animation-delay: 2.5s;
@@ -229,8 +231,9 @@ p{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    top: 45%;
-    right: 10%;
+    top: 40%;
+    right: 15%;
+    user-select: none;
 }
 
 .nav-bar a{
