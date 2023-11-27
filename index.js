@@ -65,6 +65,7 @@ window.addEventListener("load", (event) => {
     addHeightToPage();
     addDecorRows(upperRowDecor);
     addDecorRows(bottomRowDecor);
+    addFilesToPortfolio();
     getDateDay();
 })
 
@@ -140,3 +141,23 @@ const infoLopp = document.querySelector('.more-info-loop p');
 infoLopp.addEventListener('mouseenter', (e) => {
     console.log(e.currentTarget);
 })
+
+function addFilesToPortfolio() {
+    const fileSection = document.querySelector('.file-section');
+
+    projectData.forEach(element => {
+        const file = document.createElement('div');
+        file.classList.add('file');
+
+        const fileImg = document.createElement('img');
+        fileImg.src = './assets/file.svg';
+
+        const fileName = document.createElement('p');
+        file.innerText = element.name;
+        fileName.classList.add('file-name');
+
+        file.appendChild(fileImg);
+        file.appendChild(fileName);
+        fileSection.appendChild(file);
+    });
+}

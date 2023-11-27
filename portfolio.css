@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    position: relative;
 }
 
 .portfolio-section .title{
@@ -26,11 +26,30 @@
 
 .portfolio-section .screen{
     position: absolute;
-        height: 85%;
-        width: 80%;
-        top: 7%;
-        left: 6%;
-        border-radius: 10px;
-        background-color: #1e1e1e;
+    height: 85%;
+    width: 80%;
+    top: 7%;
+    left: 6%;
+    border-radius: 10px;
+    background-color: #1e1e1e;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.portfolio-section .screen .screen-decor{
+    position: absolute;
+    width: 98%;
+    height: 100%;
+    z-index: 2;
+}
+
+.portfolio-section .file-section{
+    width: 20%;
+    height: 100%;
+    right: 0;
+    position: absolute;
+}
+
 
