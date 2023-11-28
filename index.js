@@ -1,57 +1,43 @@
 let projectData = [
     {
-        name: 'Matas Project',
-        dates: '2022, 2023',
+        name: 'Matas',
         description: "",
-        imgSrc: '',
+        imgSrc: './assets/projects/matas.svg',
         URL: "",
         githubUrl:""
     },
     {
         name: 'Achdut Israel',
-        dates: '2023 - Today',
         description: "",
-        imgSrc: '',
+        imgSrc: './assets/projects/meshektech.svg',
         URL: "",
         githubUrl:""
     },
     {
-        name: 'Angular Component Libary',
-        dates: '2023',
+        name: 'Component Libary',
         description: "",
-        imgSrc: '',
+        imgSrc: './assets/projects/storybook.svg',
         URL: "",
         githubUrl:""
     },
     {
-        name: 'Js Music Player',
-        dates: '2022',
+        name: 'Music Player',
         description: "",
-        imgSrc: '',
+        imgSrc: './assets/projects/spotify.svg',
         URL: "",
         githubUrl:""
     },
     {
         name: 'FloralJoy - Landing Page',
-        dates: '2023',
         description: "",
-        imgSrc: '',
+        imgSrc: './assets/projects/floral-joy.svg',
         URL: "",
         githubUrl:""
     },
     {
         name: 'Atendi - landing page',
-        dates: '2022',
         description: "",
-        imgSrc: '',
-        URL: "",
-        githubUrl:""
-    },
-    {
-        name: 'IP tracker',
-        dates: '2023',
-        description: "",
-        imgSrc: '',
+        imgSrc: './assets/projects/atendi.svg',
         URL: "",
         githubUrl:""
     }
@@ -65,14 +51,14 @@ window.addEventListener("load", (event) => {
     addHeightToPage();
     addDecorRows(upperRowDecor);
     addDecorRows(bottomRowDecor);
-    addFilesToPortfolio();
+    addProjectsToPortfolio();
     getDateDay();
 })
 
 function addHeightToPage() {
     const mainPage = document.querySelector('.main-section');
     const protfolioSection = document.querySelector('.portfolio-section');
-    protfolioSection.style.height = window.innerHeight;
+    protfolioSection.style.height = window.innerHeight * 1;
     mainPage.style.height = window.innerHeight;
 }
 
@@ -142,22 +128,29 @@ infoLopp.addEventListener('mouseenter', (e) => {
     console.log(e.currentTarget);
 })
 
-function addFilesToPortfolio() {
-    const fileSection = document.querySelector('.file-section');
+function addProjectsToPortfolio() {
+
+    const projectBlocks = document.querySelector('.project-blocks');
 
     projectData.forEach(element => {
-        const file = document.createElement('div');
-        file.classList.add('file');
+        const projectSection = document.createElement('div');
+        const projectBlock = document.createElement('div');
+        const projectImg = document.createElement('img');
+        const projectName = document.createElement('p');
 
-        const fileImg = document.createElement('img');
-        fileImg.src = './assets/file.svg';
+        projectSection.classList.add('.project-section');
+        projectBlock.classList.add('project-block');
+        projectImg.classList.add('project-img');
+        projectName.classList.add('project-name');
 
-        const fileName = document.createElement('p');
-        file.innerText = element.name;
-        fileName.classList.add('file-name');
+        projectImg.src = element.imgSrc;
+        projectName.innerText = element.name;
 
-        file.appendChild(fileImg);
-        file.appendChild(fileName);
-        fileSection.appendChild(file);
+        projectBlock.appendChild(projectImg);
+        projectBlocks.appendChild(projectBlock);
+        projectSection.appendChild(projectName);
+        projectSection.appendChild(projectBlock);
+
+        projectBlocks.appendChild(projectBlock);
     });
 }
