@@ -164,6 +164,7 @@ function addProjectsToPortfolio() {
         projectSection.classList.add('project-section');
         projectBlock.classList.add('project-block');
         projectImg.classList.add('project-img');
+        projectImg.classList.add(element.name.split(' ').join('_'));
 
         projectName.classList.add('project-name');
 

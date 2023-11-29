@@ -26,20 +26,9 @@
     filter: drop-shadow(23px 19px 4px rgba(0, 0, 0, 0.25));
 }
 
-.portfolio-section .project-blocks{
-    width: 60%;
-    height: 80%;
-    display: flex;
-    background-color: aqua;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .portfolio-section .project-sections{
     height: 100%;
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -89,5 +78,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    width: 60%;
+    width: 70%;
+}
+
+.portfolio-section .project-block .project-img.Component_Libary{
+    width: 40%;
+}
+
+.portfolio-section .project-block .project-img.Music_Player{
+    width: 40%;
+}
+
+.portfolio-section .project-block .project-img.Atendi {
+    width: 100%;
 }
