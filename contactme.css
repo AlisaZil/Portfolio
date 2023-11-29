@@ -1,0 +1,219 @@
+.contact-me-section{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bottom-nav-bar{
+    width: 100%;
+    height: 70px;
+    background-color: #1E1E1E;
+}
+
+.contact-me-section .cover-section{
+
+    width: 50%;
+    height: 60%;
+    min-width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    transition: 0.3s;
+
+}
+
+@keyframes revelText {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 31%;
+    }
+}
+
+.contact-me-section .cover-section .secondary-title{
+    color: #1E1E1E;
+    font-size: 90px;
+    transition: 0.3s;
+    padding-left: 50px;
+
+    margin-bottom: 50px;
+
+    width: 80%;
+}
+
+.contact-me-section .cover-section .secondary-title:hover{
+    margin-left: 20px;
+}
+
+.contact-me-section .cover-section .title{
+    display: flex;
+    align-items: flex-end;
+    width: 65%;
+    height: fit-content;
+    background-color: #FC354C;
+
+    padding: 10px 50px;
+    transition: 0.5s;
+}
+
+.contact-me-section .cover-section .title:hover{
+    width: 90%;
+}
+
+.contact-me-section .cover-section .title:hover .quote{
+    width: 31%;
+    animation: changeColor 1s ease forwards;
+}
+
+.contact-me-section .cover-section .title:hover .heart{
+    animation: wiggleHeart 1s ease forwards;
+}
+
+.contact-me-section .cover-section .quote{
+    position: relative;
+    width: 0%;
+    font-size: 40px;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    color: #1E1E1E;
+}
+
+.contact-me-section .cover-section .title .connect{
+    transition: 0.3s;
+}
+
+.contact-me-section .cover-section .title .heart{
+    font-size: 90px;
+    animation: none;
+    margin-bottom: 20px;
+}
+
+.contact-me-section .cover-section .title{
+    color: #EEDFC2;
+    font-size: 120px;
+}
+
+
+.contact-me-section p{
+    font-family: Nomad;
+    user-select: none;
+}
+
+.contact-me-section .button-section .contact-icons{
+    filter:brightness(0.1);
+    display: flex;
+    align-items: center;
+}
+
+.contact-me-section .button-section .contact-icons img{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+@keyframes wiggleHeart {
+    30%{
+        transform: rotate(10deg);
+    }
+    40%{
+        transform: rotate(-10deg);
+    }
+    50%{
+        transform: rotate(10deg);
+    }
+    60%{
+        transform: rotate(-10deg);
+    }
+    70%{
+        transform: rotate(0);
+    }
+}
+
+.contact-me-section .button-section{
+    width: 45%;
+    height: 70%;
+    position: relative;
+    margin-top: 100px;
+}
+
+.contact-me-section .button-section .contact-button{
+    width: 100%;
+}
+
+.contact-me-section .button-section .contact-button a{
+
+    width: fit-content;
+    font-size: 60px;
+    font-family: Nomad;
+    background-color: #EEDFC2;
+    width: 100%;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+    padding-top: 20px;
+    color: #1E1E1E;
+    border-radius: 2px;
+    position: relative;
+
+    transition: all .35s;
+    border: #1E1E1E 5px solid;
+    margin: 20px 0;
+    user-select: none;
+    cursor: pointer;
+}
+
+.contact-me-section .button-section .contact-button a::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #FC354C;
+    transition: all .55s;
+}
+
+.contact-me-section .button-section .contact-button a span {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-me-section .button-section .contact-button a:hover {
+    color: #EEDFC2;
+}
+
+.contact-me-section .button-section .contact-button a:hover:after {
+    width: 100%;
+}
+
+.contact-me-section .button-section .contact-button a:active::after {
+    background: #e12c41;
+}
+
+.contact-me-section .button-section .contact-button a:active {
+    transform: scale(0.98);
+}
+
+.bottom-nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-nav-bar .contact-icons img{
+    margin: 0px 10px;
+}
+
+.bottom-nav-bar p{
+    color: #EEDFC2;
+    font-family: MuseoModerno-light;
+}

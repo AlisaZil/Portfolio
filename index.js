@@ -4,61 +4,83 @@ let projectData = [
         description: "",
         imgSrc: './assets/projects/matas.svg',
         URL: "",
-        githubUrl:""
+        githubUrl: ""
     },
     {
         name: 'Achdut Israel',
         description: "",
         imgSrc: './assets/projects/meshektech.svg',
         URL: "",
-        githubUrl:""
+        githubUrl: ""
     },
     {
         name: 'Component Libary',
         description: "",
         imgSrc: './assets/projects/storybook.svg',
         URL: "",
-        githubUrl:""
-    },
-    {
-        name: 'Music Player',
-        description: "",
-        imgSrc: './assets/projects/spotify.svg',
-        URL: "",
-        githubUrl:""
+        githubUrl: ""
     },
     {
         name: 'FloralJoy - Landing Page',
         description: "",
         imgSrc: './assets/projects/floral-joy.svg',
         URL: "",
-        githubUrl:""
+        githubUrl: ""
     },
     {
         name: 'Atendi - landing page',
         description: "",
         imgSrc: './assets/projects/atendi.svg',
         URL: "",
-        githubUrl:""
+        githubUrl: ""
+    },
+    {
+        name: 'Music Player',
+        description: "",
+        imgSrc: './assets/projects/spotify.svg',
+        URL: "",
+        githubUrl: ""
+    }
+];
+
+let buttons = [
+    {
+        value: "AlisaZilberman@gmail.com",
+        url: 'email'
+    },
+    {
+        value: "Github",
+        url: 'https://github.com/AlisaZil'
+    },
+    {
+        value: "linkedin",
+        url: 'https://www.linkedin.com/in/alisa-zilberman-4408a7242/'
+    },
+    {
+        value: "Xplace",
+        url: 'https://www.xplace.com/il/u/alisazilberman'
     }
 ]
-
 
 const upperRowDecor = document.querySelector('.upper-row-decor')
 const bottomRowDecor = document.querySelector('.bottom-row-decor')
 
 window.addEventListener("load", (event) => { 
+    JOS.init({
+        duration: 1
+    });
     addHeightToPage();
     addDecorRows(upperRowDecor);
     addDecorRows(bottomRowDecor);
     addProjectsToPortfolio();
     getDateDay();
+    addButtonToConnect();
 })
 
 function addHeightToPage() {
     const mainPage = document.querySelector('.main-section');
-    const protfolioSection = document.querySelector('.portfolio-section');
-    protfolioSection.style.height = window.innerHeight * 1;
+    const contactMe = document.querySelector('.contact-me-section');
+    contactMe.style.height = window.innerHeight * 0.95;
     mainPage.style.height = window.innerHeight;
 }
 
@@ -130,27 +152,58 @@ infoLopp.addEventListener('mouseenter', (e) => {
 
 function addProjectsToPortfolio() {
 
-    const projectBlocks = document.querySelector('.project-blocks');
+    const projectSections = document.querySelector('.project-sections');
 
     projectData.forEach(element => {
+        
         const projectSection = document.createElement('div');
         const projectBlock = document.createElement('div');
         const projectImg = document.createElement('img');
         const projectName = document.createElement('p');
 
-        projectSection.classList.add('.project-section');
+        projectSection.classList.add('project-section');
         projectBlock.classList.add('project-block');
         projectImg.classList.add('project-img');
+
         projectName.classList.add('project-name');
 
         projectImg.src = element.imgSrc;
         projectName.innerText = element.name;
 
         projectBlock.appendChild(projectImg);
-        projectBlocks.appendChild(projectBlock);
+        projectSections.appendChild(projectBlock);
         projectSection.appendChild(projectName);
         projectSection.appendChild(projectBlock);
 
-        projectBlocks.appendChild(projectBlock);
+        projectSections.appendChild(projectSection);
     });
+}
+
+function addButtonToConnect() {
+    
+    const buttonSection = document.querySelector('.button-section');
+
+    buttons.forEach((button) => {
+        const buttonWrap = document.createElement('div');
+        const link = document.createElement('a');
+        const span = document.createElement('span');
+
+        buttonWrap.classList.add('contact-button');
+        span.innerText = button.value;
+        link.appendChild(span);
+        buttonWrap.appendChild(link);
+
+        buttonSection.appendChild(buttonWrap);
+
+        if (button.url === 'email') {
+            buttonWrap.addEventListener('click', () => {
+              window.location.href = 'mailto:' + button.value;
+            })
+            
+        } else {
+            buttonWrap.addEventListener('click', () => {
+              window.open(button.url);
+            })
+        }
+    })
 }

@@ -33,6 +33,16 @@ html{
     overflow-x: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
+    animation: holdPage 10s ease forwards;
+}
+
+@keyframes holdPage {
+    0%{
+        overflow-y: hidden;
+    }
+    100%{
+        overflow-y: 100%;
+    }
 }
 
 .dim-background{
@@ -109,6 +119,7 @@ html{
     margin-left: 20px;
     transition: 0.5s;
     animation-duration: 1s;
+    text-align: center;
 }
 
 .main-section .name-sction{
@@ -231,7 +242,7 @@ p{
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    top: 38%;
+    top: 50%;
     right: 15%;
     user-select: none;
 }
@@ -269,7 +280,7 @@ p{
     20%{
         color: white;
     }
-    50%{
+    100%{
         color: #1E1E1E;
         opacity: 1;
     }

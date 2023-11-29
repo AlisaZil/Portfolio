@@ -1,5 +1,6 @@
 .portfolio-section{
     width: 100%;
+    height: fit-content;
     background-color:#1e1e1e;
     display: flex;
     flex-direction: column;
@@ -12,6 +13,17 @@
     font-family: Nomad;
     color: white;
     font-size: 90px;
+    filter: drop-shadow(23px 19px 4px rgba(0, 0, 0, 0.25));
+
+    margin: 40px 0;
+}
+
+.portfolio-section .project-section .project-name{
+    margin-top: 10px;
+    color: #FFF;
+    font-family: MuseoModerno;
+    font-size: 25px;
+    filter: drop-shadow(23px 19px 4px rgba(0, 0, 0, 0.25));
 }
 
 .portfolio-section .project-blocks{
@@ -25,30 +37,57 @@
     justify-content: center;
 }
 
-.portfolio-section .project-blocks .project-section{
+.portfolio-section .project-sections{
+    height: 100%;
+    width: 65%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* flex-wrap: wrap; */
-}
-
-.portfolio-section .project-blocks .project-block{
-    height:0;
-    width:32%;
-    padding-bottom:32%;
-
-    background-color: white;
-    border-radius: 10px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 100px;
 }
 
-.portfolio-section .project-blocks .project-block img{
-    width: 50%;
+.portfolio-section .project-sections .project-section{
+    height: fit-content;
+    width: 30%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.portfolio-section .project-sections .project-section .project-block{
+    height:0;
+    width:90%;
+    padding-bottom:90%;
+
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 26px 18px 4px 0px rgba(0, 0, 0, 0.25);
+
+    position: relative;
+    transition: 0.3s;
+}
+
+.portfolio-section .project-sections .project-section .project-block:hover{
+    background-color: rgba(255, 255, 255, 0.091);
+}
+
+.portfolio-section .project-sections .project-section .project-block:active {
+    transform: scale(0.99);
+}
+
+.portfolio-section .project-block .project-img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 60%;
 }

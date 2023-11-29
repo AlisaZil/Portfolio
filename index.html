@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./animation.css">
     <link rel="stylesheet" href="./portfolio.css">
+    <link rel="stylesheet" href="./contactme.css">
+
+    <link id="jos-stylesheet" rel="stylesheet" href="https://unpkg.com/jos-animation/dist/jos.css"
+        crossorigin="anonymous" />
 </head>
 
 <body>
@@ -54,7 +58,6 @@
                  
                 <div class="nav-bar">
                     <a href="#Portfolio">Portfolio</a>
-                    <a href="#About">About</a>
                     <a class="contact" href="#contactMe">contact me</a>
                 </div>
 
@@ -64,9 +67,8 @@
                 <div class="part-2">
                     <p class="proff">Front end Developer</p>
                     <div class="contact-icons">
-                        <img src="./assets/icons/email.svg" alt="icon">
+                        <img src="./assets/icons/email.svg" alt="icon" onclick=" window.location.href = 'mailto:alisazilberman@gmail.com'">
                         <img src="./assets/icons/github.svg" alt="icon" onclick="redirectePage('https://github.com/AlisaZil')">
-                        <img src="./assets/icons/phone.svg" alt="icon">
                     </div>
                 </div>
 
@@ -93,12 +95,44 @@
             
             <p class="title">portfolio</p>
 
-            <div class="project-blocks"></div>
+            <div class="project-sections jos" data-jos_animation="zoom-out-down"></div>
 
+        </div>
+
+        <div class="contact-me-section">
+            
+            <div data-jos_animation="zoom-out-right"
+            class="cover-section jos">
+
+            <div class="secondary-title">
+                <p>Need a front end developer to save you day?</p>
+            </div>
+                
+                
+                <div class="title">
+                    <p class="connect">Let's Connect</p>
+                    <p class="heart">❣️</p>
+                    <p class="quote">I swear I don't bite :)</p>
+                </div>
+                
+            </div>
+            <div class="button-section jos" 
+            data-jos_animation="zoom-out-left">
+            </div>
+        </div>
+
+        <div class="bottom-nav-bar">
+            <p>Developed by Alisa Zilberman</p>
+            <div class="contact-icons">
+                <img src="./assets/icons/email.svg" alt="icon" onclick=" window.location.href = 'mailto:alisazilberman@gmail.com'">
+                <img src="./assets/icons/github.svg" alt="icon" onclick="redirectePage('https://github.com/AlisaZil')">
+            </div>
         </div>
 
     </div>
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/jos-animation/dist/jos.min.js"></script>
 </body>
 
 </html>
