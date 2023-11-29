@@ -1,19 +1,20 @@
 .resume-button a {
-    display: block;
-    width: 189px;
-    height: 56px;
-    font-size: 50px;
-    font-family: Nomad;
-    text-decoration: none;
-    color: #1E1E1E;
-    border: 3px solid #1E1E1E;
-    border-radius: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
-    padding-top: 14px;
 
-    margin-right: 100px;
+  display: block;
+  width: 189px;
+  height: 56px;
+  font-size: 50px;
+  font-family: Nomad;
+  text-decoration: none;
+  color: #1E1E1E;
+  border: 3px solid #1E1E1E;
+  border-radius: 2px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  padding-top: 14px;
+
+  margin-right: 100px;
 }
 
 .resume-button a span {
