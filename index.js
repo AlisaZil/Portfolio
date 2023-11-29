@@ -21,14 +21,14 @@ let projectData = [
         githubUrl: ""
     },
     {
-        name: 'FloralJoy - Landing Page',
+        name: 'FloralJoy',
         description: "",
         imgSrc: './assets/projects/floral-joy.svg',
         URL: "",
         githubUrl: ""
     },
     {
-        name: 'Atendi - landing page',
+        name: 'Atendi',
         description: "",
         imgSrc: './assets/projects/atendi.svg',
         URL: "",
