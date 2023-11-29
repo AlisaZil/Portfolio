@@ -51,6 +51,7 @@
     padding: 10px 30px;
     transition: 0.5s;
     flex-wrap: wrap;
+    padding-top: 20px;
 }
 
 .contact-me-section .cover-section .title:hover{
