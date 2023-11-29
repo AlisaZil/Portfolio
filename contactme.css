@@ -27,18 +27,9 @@
 
 }
 
-@keyframes revelText {
-    0%{
-        width: 0;
-    }
-    100%{
-        width: 31%;
-    }
-}
-
 .contact-me-section .cover-section .secondary-title{
     color: #1E1E1E;
-    font-size: 90px;
+    font-size: 4.5vw;
     transition: 0.3s;
     padding-left: 50px;
 
@@ -58,8 +49,9 @@
     height: fit-content;
     background-color: #FC354C;
 
-    padding: 10px 50px;
+    padding: 10px 30px;
     transition: 0.5s;
+    flex-wrap: wrap;
 }
 
 .contact-me-section .cover-section .title:hover{
@@ -67,7 +59,7 @@
 }
 
 .contact-me-section .cover-section .title:hover .quote{
-    width: 31%;
+    width: 13vw;
     animation: changeColor 1s ease forwards;
 }
 
@@ -78,7 +70,7 @@
 .contact-me-section .cover-section .quote{
     position: relative;
     width: 0%;
-    font-size: 40px;
+    font-size: 2vw;
     margin: 0 auto;
     text-align: center;
     white-space: nowrap;
@@ -86,21 +78,25 @@
     transform: translateY(-50%);
     transition: 0.5s;
     color: #1E1E1E;
+
+    margin-left: 90px;
 }
 
 .contact-me-section .cover-section .title .connect{
     transition: 0.3s;
+    font-size: 6vw;
 }
 
-.contact-me-section .cover-section .title .heart{
-    font-size: 90px;
+.contact-me-section .cover-section .title span.heart{
+
+    position: absolute;
+    font-size: 4vw;
     animation: none;
-    margin-bottom: 20px;
+    margin-top: -5px;
 }
 
 .contact-me-section .cover-section .title{
     color: #EEDFC2;
-    font-size: 120px;
 }
 
 
