@@ -137,8 +137,19 @@
 .contact-me-section .button-section{
     width: 45%;
     height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     margin-top: 100px;
+
+    border-radius: 5px;
+
+    background: linear-gradient(180deg, #0ABFBC 50.33%, #FC354C 50.4%);
+
+    padding-left: 30px;
 }
 
 .contact-me-section .button-section .contact-button{
@@ -165,6 +176,10 @@
     margin: 20px 0;
     user-select: none;
     cursor: pointer;
+}
+
+.contact-me-section .button-section .contact-button:nth-last-child(-n + 2) a::after{
+    background-color: #0ABFBC;
 }
 
 .contact-me-section .button-section .contact-button a::after{
@@ -204,7 +219,7 @@
     align-items: center;
     justify-content: center;
 }
-
+ 
 .bottom-nav-bar .contact-icons img{
     margin: 0px 10px;
 }

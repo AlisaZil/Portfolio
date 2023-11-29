@@ -39,7 +39,7 @@
 
 .portfolio-section .project-sections .project-section{
     height: fit-content;
-    width: 30%;
+    width: 25%;
     margin: 20px;
     display: flex;
     flex-direction: column-reverse;
