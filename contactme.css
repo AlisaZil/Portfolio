@@ -4,7 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .bottom-nav-bar{
@@ -148,7 +147,7 @@
 .contact-me-section .button-section .contact-button a{
 
     width: fit-content;
-    font-size: 60px;
+    font-size: 4vw;
     font-family: Nomad;
     background-color: #EEDFC2;
     width: 100%;
