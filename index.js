@@ -25,7 +25,7 @@ let projectData = [
         description: "",
         imgSrc: './assets/projects/floral-joy.svg',
         URL: "",
-        githubUrl: ""
+        githubUrl: "https://alisazil.github.io/floralJoy.github.io"
     },
     {
         name: 'Atendi',
@@ -39,7 +39,7 @@ let projectData = [
         description: "",
         imgSrc: './assets/projects/spotify.svg',
         URL: "",
-        githubUrl: ""
+        githubUrl: "https://alisazil.github.io/my-audio-player/"
     }
 ];
 
