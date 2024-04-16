@@ -4,42 +4,46 @@ let projectData = [
         description: "",
         imgSrc: './assets/projects/matas.svg',
         URL: "",
-        githubUrl: ""
+        githubUrl: "",
+        disable: true
     },
     {
         name: 'Achdut Israel',
         description: "",
         imgSrc: './assets/projects/meshektech.svg',
         URL: "",
-        githubUrl: ""
+        githubUrl: "",
+        videoUrl:"./video/achdut.mp4"
     },
     {
         name: 'Component Libary',
         description: "",
         imgSrc: './assets/projects/storybook.svg',
         URL: "",
-        githubUrl: ""
+        githubUrl: "",
+        disable: true
     },
     {
         name: 'FloralJoy',
         description: "",
         imgSrc: './assets/projects/floral-joy.svg',
-        URL: "",
-        githubUrl: "https://alisazil.github.io/floralJoy.github.io"
+        URL: "https://alisazil.github.io/floralJoy.github.io",
+        githubUrl: ""
     },
     {
         name: 'Atendi',
         description: "",
         imgSrc: './assets/projects/atendi.svg',
         URL: "",
-        githubUrl: ""
+        githubUrl: "",
+        videoUrl:"./video/athendi.mp4"
     },
     {
         name: 'Music Player',
         description: "",
         imgSrc: './assets/projects/spotify.svg',
-        URL: "",
-        githubUrl: "https://alisazil.github.io/my-audio-player/"
+        URL: "https://alisazil.github.io/my-audio-player/",
+        githubUrl: ""
     }
 ];
 
@@ -163,6 +167,12 @@ function addProjectsToPortfolio() {
 
         projectSection.classList.add('project-section');
         projectBlock.classList.add('project-block');
+
+        if (element.disable) {
+            projectBlock.classList.add('disable');
+        }
+
+        projectBlock.classList.add('project-block');
         projectImg.classList.add('project-img');
         projectImg.classList.add(element.name.split(' ').join('_'));
 
@@ -175,6 +185,23 @@ function addProjectsToPortfolio() {
         projectSections.appendChild(projectBlock);
         projectSection.appendChild(projectName);
         projectSection.appendChild(projectBlock);
+
+        projectBlock.addEventListener('click', () => {
+            if (element.URL) {
+                window.open(element.URL);
+            }
+            if (element.videoUrl) {
+                
+                document.querySelector('.source').src = element.videoUrl;
+                document.querySelector('.video').load();
+                document.querySelector('.video-section').style.display = 'block';
+                document.querySelector('.dim-background').style.opacity = '1';
+            }
+
+            else {
+                
+            }
+        })
 
         projectSections.appendChild(projectSection);
     });

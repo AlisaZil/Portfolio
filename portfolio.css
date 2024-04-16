@@ -64,6 +64,15 @@
     transition: 0.3s;
 }
 
+.portfolio-section .project-sections .project-section .disable{
+    background-color: #171717 !important;
+}
+
+.portfolio-section .disable .project-img {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
 .portfolio-section .project-sections .project-section .project-block:hover{
     background-color: rgba(255, 255, 255, 0.091);
 }
@@ -91,4 +100,36 @@
 
 .portfolio-section .project-block .project-img.Atendi {
     width: 100%;
+}
+
+
+.video-section{
+    position: fixed;
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    background-color: black;
+
+    border-radius: 10px;
+    z-index: 10;
+    display: none;
+}
+
+.video-section .video{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.video-section .exit{
+    position: fixed;
+    top: 70px;
+    left: 70px;
+    color: white;
+
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 15;
 }
