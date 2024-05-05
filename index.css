@@ -286,3 +286,12 @@ p{
     }
     
 }
+
+.more-info-loop span{
+    cursor: pointer;
+}
+
+.more-info-loop span:hover{
+    color: #FC354C;
+    transition: 0.3s;
+}
