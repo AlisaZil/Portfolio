@@ -52,6 +52,7 @@
 
     .main-section .top-section{
         height: 15%;
+        margin-bottom: 15px;
     }
 
     .rotatingText-adjective {
@@ -64,6 +65,14 @@
 
     .name-sction{
         height: 700px !important;
+    }
+
+    .portfolio-section .project-sections{
+        align-items: flex-start;
+        width: fit-content;
+    }
+    .portfolio-section .project-sections .project-section{
+        width: 30%;
     }
 }
 
