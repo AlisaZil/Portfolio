@@ -23,17 +23,35 @@
     .main-section .name-sction .part-1 .name {
         text-align: center;
         margin: 0;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
         font-size: 100px;
+    }
+
+    .main-section .name-sction .part-2{
+        height: 25%;
+    }
+
+    .main-section .name-sction .part-1{
+        height: 40%;
     }
 
     .main-section .name-sction .part-2 .proff {
         text-align: center;
         margin: 0;
+        font-size: 35px;
+        padding-top: 30px;
+    }
+
+    .main-section .name-sction .part-2 .contact-icons{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .main-section .top-section{
-        height: 13%;
+        height: 15%;
     }
 
     .rotatingText-adjective {
