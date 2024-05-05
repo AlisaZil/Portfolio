@@ -19,10 +19,6 @@
             font-size: 40px;
         }
     }
-    
-    .top-section .date-section .availability {
-
-    }
 
     .main-section .name-sction .part-1 .name {
         text-align: center;
@@ -45,6 +41,14 @@
     }
     .portfolio-section{
         margin-top: -100px;
+    }
+
+    .rotatingText-adjective {
+        font-size: 50px;
+    }
+
+    .rotatingText-adjective:nth-of-type(3) {
+        animation-duration: 0.7s;
     }
 }
 

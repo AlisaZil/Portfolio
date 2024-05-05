@@ -121,9 +121,12 @@
     transform: translate3d(0, 50px, 0);
   }
   
-  50%, 99% {
+  50%, 80% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+  99%{
+    opacity: 0;
   }
   100%{
     display: none;
