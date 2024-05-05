@@ -1,4 +1,9 @@
 @media screen and (max-width: 1000px) {
+
+    html{
+        animation: none;
+    }
+
     .resume-button a {
         width: 150px;
         height: 44px;
