@@ -207,12 +207,9 @@
     z-index: 4;
   }
 
-  99% {
+  100% {
     z-index: 0;
-
-  }
-  100%{
-    display: none;
+    
   }
 }
 
