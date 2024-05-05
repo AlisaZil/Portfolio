@@ -23,16 +23,18 @@
     .main-section .name-sction .part-1 .name {
         text-align: center;
         margin: 0;
-        margin-bottom: 30px;
         font-size: 100px;
     }
 
     .main-section .name-sction .part-2{
         height: 25%;
+        align-items: center;
     }
 
     .main-section .name-sction .part-1{
         height: 40%;
+        align-items: center;
+        justify-content: center;
     }
 
     .main-section .name-sction .part-2 .proff {
@@ -86,6 +88,10 @@
     .project-sections .project-section .project-name {
         font-size: 15px !important;
         transition: 0.3s;
+    }
+
+    .contact-me-section{
+        display: none;
     }
 }
 

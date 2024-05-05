@@ -47,21 +47,17 @@ let projectData = [
     }
 ];
 
-let buttons = [
+let rotateLinks =[
     {
-        value: "AlisaZilberman@gmail.com",
-        url: 'email'
-    },
-    {
-        value: "Github",
-        url: 'https://github.com/AlisaZil'
-    },
-    {
-        value: "linkedin",
+        name: "linkedin",
         url: 'https://www.linkedin.com/in/alisa-zilberman-4408a7242/'
     },
     {
-        value: "Xplace",
+        name: "Github",
+        url: 'https://github.com/AlisaZil'
+    },
+    {
+        name: "Xplace",
         url: 'https://www.xplace.com/il/u/alisazilberman'
     }
 ]
@@ -78,13 +74,31 @@ window.addEventListener("load", (event) => {
     addDecorRows(bottomRowDecor);
     addProjectsToPortfolio();
     getDateDay();
-    addButtonToConnect();
+
+    rotateLinks.forEach(element => {
+        addClickToRotateText(element.name, element.url);
+    });
 })
+
+function addClickToRotateText(textName, url) {
+
+    let currButtonList = document.getElementsByClassName(textName);
+
+    for (let i in currButtonList) {
+
+        if (!isNaN(i)) {
+            currButtonList[i].addEventListener("click", () => {
+                window.open(url);
+            })
+        }
+    }
+   
+}
 
 function addHeightToPage() {
     const mainPage = document.querySelector('.main-section');
-    const contactMe = document.querySelector('.contact-me-section');
-    contactMe.style.height = window.innerHeight * 0.95;
+    // const contactMe = document.querySelector('.contact-me-section');
+    // contactMe.style.height = window.innerHeight * 0.95;
     mainPage.style.height = window.innerHeight;
 }
 
@@ -149,10 +163,6 @@ function redirectePage(location) {
 }
 
 const infoLopp = document.querySelector('.more-info-loop p');
-
-infoLopp.addEventListener('mouseenter', (e) => {
-    console.log(e.currentTarget);
-})
 
 function addProjectsToPortfolio() {
 

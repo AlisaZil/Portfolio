@@ -218,10 +218,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: -5px;
 }
  
 .bottom-nav-bar .contact-icons img{
-    margin: 0px 10px;
+    margin-left: 10px;
 }
 
 .bottom-nav-bar p{
