@@ -207,8 +207,12 @@
     z-index: 4;
   }
 
-  100% {
+  99% {
     z-index: 0;
+
+  }
+  100%{
+    display: none;
   }
 }
 
