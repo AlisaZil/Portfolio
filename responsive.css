@@ -43,6 +43,10 @@
     .rotatingText-adjective:nth-of-type(3) {
         animation-duration: 0.7s;
     }
+
+    .main-section{
+        height: 1200px !important;
+    }
 }
 
 @media screen and (max-width: 1307px) {
