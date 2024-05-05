@@ -76,6 +76,10 @@
     .portfolio-section .project-sections .project-section{
         width: 30%;
     }
+
+    .info-loop-section{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1307px) {
