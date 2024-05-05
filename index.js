@@ -134,15 +134,18 @@ const dimBackground = document.querySelector('.dim-background');
 
 dateSection.addEventListener("mouseover", (event) => {
 
-    dateSection.style.backgroundColor = '#FC354C';
-    dateSection.style.width = '25%';
-    dateSectionAvailability.style.width = 'fit-content';
-    dateSectionAvailability.innerText = 'this is a fake availability :( contact me to check my actual status';
-    dateSectionAvailability.style.animationName = "changeColor";
+    if (window.innerWidth > 1000) {
+        dateSection.style.backgroundColor = '#FC354C';
+        dateSection.style.width = '25%';
+        dateSectionAvailability.style.width = 'fit-content';
+        dateSectionAvailability.innerText = 'this is a fake availability :( contact me to check my actual status';
+        dateSectionAvailability.style.animationName = "changeColor";
+    
+    
+        dimBackground.style.opacity = 1;
+        dimBackground.style.zIndex = 2;
+    }
 
-
-    dimBackground.style.opacity = 1;
-    dimBackground.style.zIndex = 2;
 });
 
 dateSection.addEventListener("mouseleave", (event) => {
