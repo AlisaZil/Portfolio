@@ -23,7 +23,8 @@
     .main-section .name-sction .part-1 .name {
         text-align: center;
         margin: 0;
-        font-size: 100px;
+        font-size: 20vw;
+        margin: 0 20px;
     }
 
     .main-section .name-sction .part-2{
