@@ -1,0 +1,67 @@
+@media screen and (max-width: 1000px) {
+    .resume-button a {
+        width: 150px;
+        height: 44px;
+        font-size: 40px;
+
+        margin-right: 20px;
+    }
+
+    .top-section .date-section .date {
+        margin-left: 20px;
+
+        .day{
+            font-size: 50px;
+            margin-bottom: -5px;
+        }
+
+        .month{
+            font-size: 40px;
+        }
+    }
+    
+    .top-section .date-section .availability {
+
+    }
+
+    .main-section .name-sction .part-1 .name {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .main-section .name-sction .part-2 .proff {
+        text-align: center;
+        margin: 0;
+    }
+
+    .main-section .top-section{
+        height: 13%;
+    }
+
+    .main-section{
+        height: 1200px;
+    }
+    .portfolio-section{
+        margin-top: -100px;
+    }
+}
+
+@media screen and (max-width: 1307px) {
+    .name-sction .nav-bar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .project-sections .project-section .project-name {
+        font-size: 15px !important;
+        transition: 0.3s;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .date-section{
+        width: 50vw !important;
+    }
+}
