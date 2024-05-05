@@ -27,7 +27,8 @@
     .main-section .name-sction .part-1 .name {
         text-align: center;
         margin: 0;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
+        font-size: 130px;
     }
 
     .main-section .name-sction .part-2 .proff {
